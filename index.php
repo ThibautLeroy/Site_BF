@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="fr">
 
 <head>
 
@@ -9,7 +9,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>Bike Forever</title>
+    <title>Agency - Start Bootstrap Theme</title>
 
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
@@ -19,13 +19,10 @@
 
     <!-- Custom Fonts -->
     <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="http://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
-    <link href='http://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-    <link href='http://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
-    <link rel='stylesheet' type='text/css'href='css/timepicki.css'/>
-    <link rel='stylesheet' type='text/css'href='css/datepicker.css'/>
-
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -38,7 +35,7 @@
 
     <body id="page-top" class="index">
 
-        <!-- Navbar -->
+        <!-- Navigation -->
         <nav class="navbar navbar-default navbar-fixed-top">
             <div class="container">
                 <!-- Brand and toggle get grouped for better mobile display -->
@@ -49,7 +46,7 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="navbar-brand page-scroll" href="#page-top">Hello</a>
+                    <a class="navbar-brand page-scroll" href="#page-top"><img src="img/logo.png" id="logo"></a>
                 </div>
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
@@ -59,7 +56,7 @@
                             <a href="#page-top"></a>
                         </li>
                         <li>
-                            <a class="page-scroll" href="#a_propos">A propos</a>
+                            <a class="page-scroll" href="#apropos">A Propos</a>
                         </li>
                         <li>
                             <a class="page-scroll" href="#reservation">Reservation</a>
@@ -72,9 +69,10 @@
                         </li>
                     </ul>
                 </div>
+                <!-- /.navbar-collapse -->
             </div>
+            <!-- /.container-fluid -->
         </nav>
-        <!-- End_Navbar -->
 
         <!-- Header -->
         <header>
@@ -86,10 +84,9 @@
                 </div>
             </div>
         </header>
-        <!-- End_Header -->
 
-        <!-- Services Section -->
-        <section id="a_propos">
+        <!-- A Propos -->
+        <section id="apropos">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 text-center">
@@ -99,73 +96,60 @@
                 </div>
                 <div class="row text-center">
                     <div class="col-lg-12">
-                        <p>Freelancer is a free bootstrap theme created by Start Bootstrap. The download includes the complete source files including HTML, CSS, and JavaScript as well as optional LESS stylesheets for easy customization.</p>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.</p>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+            <!-- End / A Propos -->
 
-        <!-- Portfolio Grid Section -->
-        <section id="reservation" class="bg-light-gray">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12 text-center">
-                        <h2 class="section-heading">Reservation</h2>
-                        <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+            <!-- Reservation -->
+            <section id="reservation" class="bg-light-gray">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2 class="section-heading">Reservation</h2>
+                            <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                        </div>
                     </div>
+                    <div class="row text-center">
+                        <div class="col-md-6">
+                            <br><br>
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-clock-o fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4 class="service-heading">Choisissez un jour</h4>
+                            <input id="datepicker" name="date" type="text" class="text-center">
+                        </div>
+                        <div class="col-md-6">
+                            <br><br>
+                            <span class="fa-stack fa-4x">
+                                <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                                <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
+                            </span>
+                            <h4 class="service-heading">Choisissez l'horaire</h4>
+                            <input id="timepicker" type="text" name="timepicker1" class="text-center"/>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="text-center">
+                            <br><br><br><br><br><br>
+                            <!-- Button trigger modal -->
+                            <button type="submit" class="btn btn-xl" data-toggle="modal" data-target="#myModal">Reservez</button>
+                    </div>
+                    <!-- Modal -->
+                    <?php include('modal.php'); ?>
                 </div>
-                <div class="row text-center">
-                    <div class="col-md-6">
-                        <br><br>
-                        <span class="fa-stack fa-4x">
-                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fa fa-clock-o fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="service-heading">Choisissez un jour</h4>
-                        <input id="datepicker" name="date" type="text" class="text-center">
-                    </div>
-                    <div class="col-md-6">
-                        <br><br>
-                        <span class="fa-stack fa-4x">
-                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                            <i class="fa fa-calendar fa-stack-1x fa-inverse"></i>
-                        </span>
-                        <h4 class="service-heading">Choisissez l'horaire</h4>
-                        <input id="timepicker" type="text" name="timepicker1" class="text-center"/>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="text-center">
-                        <br><br><br><br><br><br>
-                        <!-- <button type="submit" class="btn btn-xl">Reservez</button> -->
-                        <button type="button" class="btn btn-info btn-lg" data-toggle="modal" data-target="#myModal">Open Modal</button>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <div id="myModal" class="modal fade" role="dialog">
-          <div class="modal-dialog">
-
-            <!-- Modal content-->
-            <div class="modal-content">
-              <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title">Modal Header</h4>
-            </div>
-            <div class="modal-body">
-                <?php include('./../bootco/index.php'); ?>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
             </div>
         </div>
+    </section>
+    <!-- End / Reservation -->
 
-    </div>
-</div>
-
-<!-- About Section -->
-<section id="tarifs">
-    <div class="container">
+    <!-- Tarifs -->
+    <section id="tarifs">
+       <div class="container">
         <div class="row">
             <div class="col-lg-12 text-center">
                 <h2 class="section-heading">Tarifs</h2>
@@ -235,12 +219,12 @@
         </div>
     </div>
 </section>
+<!-- End / Tarifs -->
 
 <!-- Clients Aside -->
 <aside class="clients">
     <div class="container">
         <div class="row">
-            <h2 class="section-heading text-center">Nos Clients</h2>
             <div class="col-md-3 col-sm-6">
                 <a href="#">
                     <img src="img/logos/envato.jpg" class="img-responsive img-centered" alt="">
@@ -264,7 +248,9 @@
         </div>
     </div>
 </aside>
+<!-- End / Clients -->
 
+<!-- Contact -->
 <section id="contact">
     <div class="container">
         <div class="row">
@@ -337,23 +323,16 @@
     </div>
 </footer>
 
+
+
 <!-- jQuery -->
 <script src="js/jquery.js"></script>
-<script src="js/jquery.min.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
 <script src="js/bootstrap.min.js"></script>
 
-
-
-
-
-
-<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
-
-
-
-
 <!-- Plugin JavaScript -->
-
+<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
 <script src="js/classie.js"></script>
 <script src="js/cbpAnimatedHeader.js"></script>
 
@@ -362,33 +341,9 @@
 <script src="js/contact_me.js"></script>
 
 <!-- Custom Theme JavaScript -->
-<script src="js/timepicki.js"></script>
-<script src="js/bootstrap-datepicker.js"></script>
-<!-- TimePicki -->
-
-
-
-
-<script type='text/javascript'>
-$('#timepicker').timepicki({
-    show_meridian:false,
-    min_hour_value:0,
-    max_hour_value:23,
-    step_size_minutes:10,
-    overflow_minutes:false,
-    increase_direction:'up',
-    disable_keyboard_mobile: true});
-</script>
-<script>
-var date = $('#datepicker').datepicker({
-    format: 'dd/mm/yyyy'
-}).on('changeDate', function(ev) {
-  date.hide();
-}).data('datepicker');
-</script>
-
-
 <script src="js/agency.js"></script>
+<script src="js/modal.js"></script>
+
 </body>
 
 </html>
