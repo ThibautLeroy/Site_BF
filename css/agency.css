@@ -965,3 +965,23 @@ body {
     border-color: #1CA347;
 }
 
+/* Connect */
+
+#connect{
+    background-color: #222222;
+}
+
+#connect_nav{
+    background-color: transparent;
+    border: solid white 2px;
+    border-radius: 2px;
+}
+
+.fa-user{
+    margin-top: -5px;
+}
+
+#time_select{
+    text-align: center;
+}
+

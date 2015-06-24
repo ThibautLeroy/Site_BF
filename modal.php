@@ -1,4 +1,4 @@
-<!-- Modal -->
+=<!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
@@ -57,26 +57,26 @@
                                         <div class="form-group">
                                             <div class="row">
                                                 <div class="col-sm-6">
-                                                    <div class="form-group">
-                                                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
+                                                    <div class="form-group">  
+                                                    <input type="text" name="nom" id="nom" tabindex="1" class="form-control" placeholder="Nom" value="">
                                                     </div>
                                                 </div>
                                                 <div class="col-sm-6">
-                                                    <input type="text" name="username" id="username" tabindex="1" class="form-control" placeholder="Username" value="">
+                                                    <input type="text" name="prenom" id="prenom" tabindex="1" class="form-control" placeholder="Prenom" value="">
                                                 </div>
                                             </div>
                                         </div>
                                         <div class="form-group">
-                                            <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email Address" value="">
+                                            <input type="email" name="email" id="email" tabindex="1" class="form-control" placeholder="Email" value="">
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Password">
+                                            <input type="password" name="password" id="password" tabindex="2" class="form-control" placeholder="Mot de passe">
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirm Password">
+                                            <input type="password" name="confirm-password" id="confirm-password" tabindex="2" class="form-control" placeholder="Confirmer le mot de passe">
                                         </div>
                                         <div class="form-group">
-                                            <input type="text" name="phone" id="oneph" tabindex="2" class="form-control" placeholder="Phone">
+                                            <input type="text" name="phone" id="oneph" tabindex="2" class="form-control" placeholder="Téléphone">
                                         </div>
                                         <div class="form-group">
                                             <div class="row">
